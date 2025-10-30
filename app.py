@@ -2,7 +2,8 @@ import streamlit as st
 from google import genai
 
 def main():
-    st.title('💬 Gemini 챗봇')
+    st.title('💬 어르신 복지 상담 챗봇')
+    st.subheader('노인 복지에 관한 궁금한 점을 물어보세요')
 
     # Gemini 클라이언트 초기화
     client = genai.Client(api_key=st.secrets["GEMINI_API_KEY"])
